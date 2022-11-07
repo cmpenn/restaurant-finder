@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css">
+    <title>Restaurant Finder</title>
+</head>
+<body>
+    <h1 class="title">Restaurant Finder</h1>
+    <h2>Having trouble figuring out where to eat?</h2>
+    <p>We have the solution to your problem!</p>
+    <aside> 
+        <h3>Add Your Restaurants</h3>
+        
+        <form>
+            <label for="restaurant-input">Restaurant</label>
+            <input type="text" id="restaurant-input">
+
+            <label for="type">Type:</label>
+            <select id="type"></select>
+
+            <h4>Rating</h4>
+            <div class="radio">
+                <label for="rating-one">1:</label>
+                <input type="radio" name="rating" value="1"
+                 id="rating-one" checked="true"/>  
+            </div>
+
+            <div class="radio">
+                <label for="rating-two">2:</label>
+                <input type="radio" name="rating" value="2"
+                 id="rating-two" checked="true"/>  
+            </div>
+
+            <div class="radio">
+                <label for="rating-three">3:</label>
+                <input type="radio" name="rating" value="3"
+                 id="rating-three" checked="true"/>  
+            </div>
+
+            <div class="radio">
+                <label for="rating-four">4:</label>
+                <input type="radio" name="rating" value="4"
+                 id="rating-four" checked="true"/>  
+            </div>
+
+            <div class="radio">
+                <label for="rating-five">5:</label>
+                <input type="radio" name="rating" value="5"
+                 id="rating-five" checked="true"/>  
+            </div>
+            
+            <button id="add-restaurant">Add Restaurant</button>
+        </form>
+    </aside>
+   
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js"></script>
+</body>
+</html>
