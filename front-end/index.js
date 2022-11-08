@@ -15,4 +15,28 @@ function getTypes(){
     })
 }
 
+function addRestaurant(){
+    
+
+    if(restaurantInput.value < 1){
+        alert('You must enter a restaurant')
+        return
+    }
+
+    let rating = document.querySelector('input[name="rating"]:checked').value
+    let body ={
+        name: restaurantInput.value,
+        typeId: +typeSelect.value,
+        rating: +rating
+    }
+
+    axios.post('http://localhost:4445/user_choices', body)
+    .then(res =>{
+        typeSelect.value = 1
+        restaurantInput.value = ''
+        document.querySelector().checked = true
+    })
+}
+
 getTypes()
+form.addEventListener('submit', addRestaurant)
