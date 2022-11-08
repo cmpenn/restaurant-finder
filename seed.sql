@@ -1,0 +1,37 @@
+--CREATE TABLE restaurant_types(
+-- type_id SERIAL PRIMARY KEY,
+-- type VARCHAR
+-- );
+
+-- CREATE TABLE user_choices(
+-- name VARCHAR(50) NOT NULL UNIQUE,
+-- type_id VARCHAR REFERENCES restaurant_types,
+-- rating INT
+-- );
+        
+-- CREATE TABLE resturants(
+-- name VARCHAR(50) NOT NULL UNIQUE,
+-- type VARCHAR,
+-- rating INT
+-- );
+
+-- INSERT INTO restaurant_types (type)
+--  VALUES ('mexican/fast-food'),
+--  ('chinese/fast-food'),
+--  ('thai/fast-food'),
+--  ('italian/fast-food'),
+--  ('american/fast-food'),
+--  ('greek/fast-food'),
+--  ('mediterranean/fast-food'),
+--  ('south american/fast-food'),
+--  ('korrean/fast-food'),
+--  ('mexican/sit-down'),
+--  ('chinese/sit-down'),
+--  ('thai/sit-down'),
+--  ('italian/sit-down'),
+--  ('american/sit-down'),
+--  ('greek/sit-down'),
+--  ('mediterranean/sit-down'),
+--  ('south american/sit-down'),
+--  ('korrean/sit-down'),
+--  ('all you can eat')
