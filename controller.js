@@ -56,7 +56,20 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 
     getRandomRestaurant: (req, res) =>{
         sequelize.query(`
-            SELECT * FROM user_choices
+            SELECT name FROM user_choices
+            ORDER BY RANDOM()
+            LIMIT 1
+        `)
+        .then((dbRes) => {
+            const {name} = dbRes[0][0]
+            console.log(dbRes[0][0])
+            res.status(200).send(name)
+         })
+    },
+
+    clearList: (req, res) =>{
+        sequelize.query(`
+            DELETE FROM user_choices
         `)
         .then((dbRes) => {
             res.status(200).send(dbRes[0])

@@ -12,6 +12,12 @@ h1{
     color: aliceblue;
 }
 
+header{
+    padding: 10px;
+    width: 100vw;
+    color: #800020;
+}
+
 h3{
     text-align: center;
 }
@@ -24,6 +30,6 @@ form{
     
 }
 
-#add-button{
 
-}
+
+

@@ -6,7 +6,7 @@ const getRestaurant = document.querySelector('#get-restaurant')
 const getButton = document.querySelector('#get-btn')
 
 function getTypes(){
-    axios.get('http://localhost:4445/restaurant_types')
+    axios.get('./restaurant_types')
     .then(res =>{
         res.data.forEach(type => {
             const option = document.createElement('option')
@@ -32,7 +32,7 @@ function addRestaurant(e){
         rating: +rating
     }
 
-    axios.post('http://localhost:4445/user_choices', body)
+    axios.post('./user_choices', body)
     .then(() =>{
         typeSelect.value = 1
         restaurantInput.value = ''
@@ -41,13 +41,19 @@ function addRestaurant(e){
 }
 
 function getRandomRestaurant(){
-    axios.get('http://localhost:4445/user_choices')
+    axios.get('./user_choices')
     .then((res) =>{
-       let restaurants = res.data
-       let randomRest = Math.floor(Math.random() * restaurants.name.length) 
-       getRestaurant.innerHTML(randomRest)
+        console.log(res)
+        let restaurant = res.data
+        console.log(restaurant)
+        getRestaurant.innerHTML = restaurant
+        getButton.classList.add('hide')
     })
 }
+
+window.addEventListener("beforeunload", function clearList(e){
+    axios.delete('./user_choices')
+ }, false);
 
 getTypes()
 form.addEventListener('submit', addRestaurant)
