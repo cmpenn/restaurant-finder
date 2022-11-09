@@ -1,5 +1,5 @@
-require('dotenv').config()
-const Sequelize = require('sequelize')
+require("dotenv").config()
+const Sequelize = require("sequelize")
 
 let {CONNECTION_STRING} = process.env
 

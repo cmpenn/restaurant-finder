@@ -1,8 +1,8 @@
-const express = require('express')
-const path = require('path')
+const express = require("express")
+const path = require("path")
 const app = express()
-require('dotenv').config()
-const{getTypes, addRestaurant, getRandomRestaurant, clearList} = require('./controller.js')
+require("dotenv").config()
+const{getTypes, addRestaurant, getRandomRestaurant, clearList} = require("./controller.js")
 
 app.use(express.json())
 
