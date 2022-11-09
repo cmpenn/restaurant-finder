@@ -4,6 +4,7 @@ const app = express()
 require("dotenv").config()
 const{getTypes, addRestaurant, getRandomRestaurant, clearList} = require("./controller.js")
 
+
 app.use(express.json())
 
 app.get('/', (req, res) =>{
