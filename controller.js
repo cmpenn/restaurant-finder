@@ -1,7 +1,7 @@
 require("dotenv").config()
 const Sequelize = require("sequelize")
 
-let {CONNECTION_STRING} = process.env
+
 
 const sequelize = new Sequelize(CONNECTION_STRING, {
     dialect: 'postgres',
