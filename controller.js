@@ -52,5 +52,15 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
         .then((dbRes) => {
             res.status(200).send(dbRes[0])
          })
+    },
+
+    getRandomRestaurant: (req, res) =>{
+        sequelize.query(`
+            SELECT * FROM user_choices
+        `)
+        .then((dbRes) => {
+            res.status(200).send(dbRes[0])
+         })
     }
+
   }

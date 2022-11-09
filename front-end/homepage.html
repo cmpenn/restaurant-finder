@@ -15,10 +15,10 @@
         <h3>Add Your Restaurants</h3>
         
         <form>
-            <label for="restaurant-input">Restaurant</label>
+           <div><label for="restaurant-input">Restaurant:</label></div> 
             <input type="text" id="restaurant-input">
 
-            <label for="type">Type:</label>
+            <div><label for="type">Type:</label></div>
             <select id="type"></select>
 
             <h4>Rating</h4>
@@ -55,7 +55,9 @@
             <button id="add-restaurant">Add Restaurant</button>
         </form>
     </aside>
-   
+   <button id="get-btn">Get Restaurant</button>
+
+   <p id="get-restaurant"></p>
     
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

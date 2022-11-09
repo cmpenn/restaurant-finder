@@ -5,7 +5,7 @@
 
 -- CREATE TABLE user_choices(
 -- name VARCHAR(50) NOT NULL UNIQUE,
--- type_id VARCHAR REFERENCES restaurant_types,
+-- type_id VARCHAR REFERENCES restaurant_types(type_id),
 -- rating INT
 -- );
         
