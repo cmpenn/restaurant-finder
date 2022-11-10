@@ -1,8 +1,32 @@
 body{
     background-image: url('/logo');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #C1CBCE;
 }
 
 button{
     padding: 5px;
     margin-top: 20px;
+    height: 100px;
+    width: 300px;
+    font-size: 40px;
+}
+
+div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fast-btn{
+
+}
+
+#sit-btn{
+    
+}
+
+#Fancy-Foods{
+
 }

@@ -51,12 +51,17 @@ function getRandomRestaurant(){
         let restaurant = res.data
         console.log(restaurant)
         getRestaurant.innerHTML = restaurant
+        if(restaurant < 1){
+            alert('There are no restaurants in you list! Add some!')
+            return
+        }
         getButton.classList.add('hide')
     })
     .catch(err =>{
         console.log(err)
         res.status(204).send(err)
     })
+    
 }
 
 window.addEventListener("beforeunload", function clearList(e){
