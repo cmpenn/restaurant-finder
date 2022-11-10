@@ -38,6 +38,10 @@ function addRestaurant(e){
         restaurantInput.value = ''
         document.querySelector('#rating-one').checked = true
     })
+    .catch(err =>{
+        console.log(err)
+        res.status(400).send('resturant not added')
+    })
 }
 
 function getRandomRestaurant(){
@@ -48,6 +52,10 @@ function getRandomRestaurant(){
         console.log(restaurant)
         getRestaurant.innerHTML = restaurant
         getButton.classList.add('hide')
+    })
+    .catch(err =>{
+        console.log(err)
+        res.status(400).send('no resturants')
     })
 }
 
