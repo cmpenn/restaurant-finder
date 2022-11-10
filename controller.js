@@ -65,6 +65,11 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
             console.log(dbRes[0][0])
             res.status(200).send(name)
          })
+         .catch((err) =>{
+            console.log('add restaurants first')
+            res.status(204).send(err)
+         })
+         
     },
 
     clearList: (req, res) =>{

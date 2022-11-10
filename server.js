@@ -19,6 +19,22 @@ app.get('/js', (req, res) =>{
     res.sendFile(path.join(__dirname, "./front-end/index.js"))
 })
 
+app.get('/html', (req, res) =>{
+    res.sendFile(path.join(__dirname, "./front-end/ourChoices.html"))
+})
+
+app.get('/css2', (req, res) =>{
+    res.sendFile(path.join(__dirname, './front-end/ourChoices.css'))
+})
+
+app.get('/js2', (req, res) =>{
+    res.sendFile(path.join(__dirname, './front-end/ourChoices.js'))
+})
+
+app.get('/logo', (req, res) =>{
+    res.sendFile(path.join(__dirname, "./logo/logo.png"))
+})
+
 app.get('/restaurant_types', getTypes)
 app.post('/user_choices', addRestaurant)
 app.get('/user_choices', getRandomRestaurant)

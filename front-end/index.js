@@ -55,7 +55,7 @@ function getRandomRestaurant(){
     })
     .catch(err =>{
         console.log(err)
-        res.status(400).send('no resturants')
+        res.status(204).send(err)
     })
 }
 
