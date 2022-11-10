@@ -35,6 +35,10 @@ app.get('/logo', (req, res) =>{
     res.sendFile(path.join(__dirname, "./logo/logo.png"))
 })
 
+app.get('/logo2', (req, res) =>{
+    res.sendFile(path.join(__dirname, "./logo/logo2.png"))
+})
+
 app.get('/restaurant_types', getTypes)
 app.post('/user_choices', addRestaurant)
 app.get('/user_choices', getRandomRestaurant)

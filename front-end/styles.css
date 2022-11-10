@@ -3,15 +3,12 @@
     margin: 0;
 }
 
-body{
-    /* background-color: #C1CBCE; */
-}
-
 header{
     width: 100vw;
     background-color: #800020;
     display: flex;
     align-items: center;
+    justify-content: row;
     justify-content: space-between;
 }
 
@@ -19,9 +16,13 @@ h1{
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: aliceblue;
-    width: fit-content;
-    margin-left: 39vw;
-    
+    width: 100px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+  
 }
 
 nav{
@@ -89,4 +90,6 @@ button{
     text-align: center;
 }
 
-
+.hide{
+    display: none;
+}
