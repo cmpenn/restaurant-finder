@@ -14,7 +14,7 @@ button{
     font-size: 40px;
 }
 
-div{
+#button-section{
     display: flex;
     justify-content: space-evenly;
 }
@@ -29,4 +29,14 @@ div{
 
 #Fancy-Foods{
 
+}
+
+#back{
+    display: flex;
+    justify-content: right;
+   
+}
+
+a{
+    text-decoration: none;
 }

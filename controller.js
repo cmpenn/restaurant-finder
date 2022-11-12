@@ -31,6 +31,10 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
         .then((dbRes) => {
             res.status(200).send(dbRes[0])
          })
+         .catch((err) =>{
+            console.log('this is already in the list')
+            res.status(418).send(err)
+         })
     },
 
     getRandomRestaurant: (req, res) =>{

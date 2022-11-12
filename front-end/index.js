@@ -38,10 +38,7 @@ function addRestaurant(e){
         restaurantInput.value = ''
         document.querySelector('#rating-one').checked = true
     })
-    .catch(err =>{
-        console.log(err)
-        res.status(400).send('resturant not added')
-    })
+   
 }
 
 function getRandomRestaurant(){
@@ -50,7 +47,7 @@ function getRandomRestaurant(){
         console.log(res)
         let restaurant = res.data
         console.log(restaurant)
-        getRestaurant.innerHTML = restaurant
+        getRestaurant.innerHTML = 'Your eating at ' + restaurant
         if(restaurant < 1){
             alert('There are no restaurants in you list! Add some!')
             return
