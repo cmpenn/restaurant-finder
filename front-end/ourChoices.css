@@ -1,3 +1,7 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 body{
     background-image: url('/logo');
     background-repeat: no-repeat;
@@ -31,12 +35,38 @@ button{
 
 }
 
-#back{
+p{
+    text-align: center;
+    font-size: 60px;
+}
+
+#home{
     display: flex;
     justify-content: right;
-   
 }
 
 a{
     text-decoration: none;
+    color: aliceblue;
+}
+
+.hide{
+    display: none;
+}
+
+#spin-again{
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+}
+
+#direction{
+    height: 40px;
+    width: 80px;
+    font-size: 15px;
+}
+
+#back{
+    font-size: 20px;
+    color: aliceblue;
 }

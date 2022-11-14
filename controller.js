@@ -62,6 +62,59 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
         .then((dbRes) => {
             res.status(200).send(dbRes[0])
          })
-    }
+    },
 
+    getRandomFastFood: (req, res) =>{
+        sequelize.query(`
+            SELECT name FROM fast_food
+            ORDER BY RANDOM()
+            LIMIT 1
+        `)
+        .then((dbRes) => {
+            const {name} = dbRes[0][0]
+            console.log(dbRes[0][0])
+            res.status(200).send(name)
+         })
+         .catch((err) =>{
+            console.log('ummm')
+            res.status(204).send(err)
+         })
+         
+    },
+
+    getRandomSitDown: (req, res) =>{
+        sequelize.query(`
+            SELECT name FROM sitdown_food
+            ORDER BY RANDOM()
+            LIMIT 1
+        `)
+        .then((dbRes) => {
+            const {name} = dbRes[0][0]
+            console.log(dbRes[0][0])
+            res.status(200).send(name)
+         })
+         .catch((err) =>{
+            console.log('ummm')
+            res.status(204).send(err)
+         })
+         
+    },
+
+    getRandomUtahFood: (req, res) =>{
+        sequelize.query(`
+            SELECT name FROM utah_food
+            ORDER BY RANDOM()
+            LIMIT 1
+        `)
+        .then((dbRes) => {
+            const {name} = dbRes[0][0]
+            console.log(dbRes[0][0])
+            res.status(200).send(name)
+         })
+         .catch((err) =>{
+            console.log('ummm')
+            res.status(204).send(err)
+         })
+         
+    }
   }

@@ -2,7 +2,7 @@ const express = require("express")
 const path = require("path")
 const app = express()
 require("dotenv").config()
-const{getTypes, addRestaurant, getRandomRestaurant, clearList} = require("./controller.js")
+const{getTypes, addRestaurant, getRandomRestaurant, clearList, getRandomFastFood, getRandomSitDown, getRandomUtahFood} = require("./controller.js")
 
 
 app.use(express.json())
@@ -43,6 +43,9 @@ app.get('/restaurant_types', getTypes)
 app.post('/user_choices', addRestaurant)
 app.get('/user_choices', getRandomRestaurant)
 app.delete('/user_choices', clearList)
+app.get('/fast_food', getRandomFastFood)
+app.get('/sitdown_food', getRandomSitDown)
+app.get('/utah_food', getRandomUtahFood)
 
 const port = process.env.PORT || 4445
 
