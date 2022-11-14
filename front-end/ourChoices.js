@@ -12,7 +12,7 @@ function getRandomFastFood(){
         console.log(restaurant)
         getRestaurant.innerHTML =
         'Your restaurant is ' + restaurant + '!' +
-        `<div><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><button id="spin-again">Spin Again?</button></a></div>
+        `<div><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><button id="spin-again">Try Again?</button></a></div>
         <div><a href="https://www.google.com/maps/search/${restaurant}"><button id="direction">Directions</button></a></div>
         <div><a id="back" href="/html">Back</a></div>`
         getFastFood.classList.add('hide')
@@ -33,7 +33,7 @@ function getRandomSitDown(){
         console.log(restaurant)
         getRestaurant.innerHTML =
         'Your restaurant is ' + restaurant + '!' +
-        `<div><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><button id="spin-again">Spin Again?</button></a></div>
+        `<div><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><button id="spin-again">Try Again?</button></a></div>
         <div><a href="https://www.google.com/maps/search/${restaurant}"><button id="direction">Directions</button></a></div>
         <div><a id="back" href="/html">Back</a></div>`
         getFastFood.classList.add('hide')
@@ -54,7 +54,7 @@ function getRandomUtahFood(){
         console.log(restaurant)
         getRestaurant.innerHTML =
         'Your restaurant is ' + restaurant + '!' +
-        `<div><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><button id="spin-again">Spin Again?</button></a></div>
+        `<div><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><button id="spin-again">Try Again?</button></a></div>
         <div><a href="https://www.google.com/maps/search/${restaurant}"><button id="direction">Directions</button></a></div>
         <div><a id="back" href="/html">Back</a></div>`
         getFastFood.classList.add('hide')

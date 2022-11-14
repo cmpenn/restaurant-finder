@@ -53,7 +53,7 @@ function getRandomRestaurant(){
         }else{
             getRestaurant.innerHTML =
             'Your restaurant is ' + restaurant + '!' +
-            `<div><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><button id="spin-again">Spin Again?</button></a><a href="https://www.google.com/maps/search/${restaurant}"><button id="direction">Directions</button></a></div>
+            `<div><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><button id="spin-again">Try Again?</button></a><a href="https://www.google.com/maps/search/${restaurant}"><button id="direction">Directions</button></a></div>
             <div><a id="back" href="/">Back</a></div>`
         }
         getButton.classList.add('hide')
