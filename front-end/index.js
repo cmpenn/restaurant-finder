@@ -46,13 +46,15 @@ function getRandomRestaurant(){
         console.log(res)
         let restaurant = res.data
         console.log(restaurant)
-        getRestaurant.innerHTML =
-        'Your eating at ' + restaurant + '!' +
-        `<div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button id="spin-again">Spin Again?</button></a><a href="https://www.google.com/maps/search/${restaurant}"><button id="direction">Directions</button></a></div>
-        <div><a id="back" href="/">Back</a></div>`
+
         if(restaurant < 1){
             alert('There are no restaurants in you list! Add some!')
             return
+        }else{
+            getRestaurant.innerHTML =
+            'Your eating at ' + restaurant + '!' +
+            `<div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button id="spin-again">Spin Again?</button></a><a href="https://www.google.com/maps/search/${restaurant}"><button id="direction">Directions</button></a></div>
+            <div><a id="back" href="/">Back</a></div>`
         }
         getButton.classList.add('hide')
     })
