@@ -15,13 +15,14 @@
     </header>
     <h2>Having trouble figuring out where to eat?</h2>
     <p class="got-it">We have the solution to your problem!</p>
-    <!-- <div class="popup" onclick="myPopup()">Instructions!
-        <span class="popuptext" id="myPopup"></span>
-      </div> -->
     <br>
     <aside> 
         <h3>Add Your Restaurants</h3>
-        
+        <div class="popup" onclick="myPopup()">Instructions
+            <span class="popuptext" id="myPopup"> 
+                 This is your personal restaurant selector. Add the restaurants you want onto your list and click "Get Restaurant" when you're ready to go eat.
+            </span>
+        </div>
         <form>
            <div><label for="restaurant-input">Restaurant:</label></div> 
             <input type="text" id="restaurant-input">
@@ -65,15 +66,19 @@
     </aside>
    <button id="get-btn">Get Restaurant</button>
 
-   <p id="get-restaurant"></p>
-   <br>
-   
-    <p class="inst">Instructions:</p>
-    <p>In the box below add one restaurnant at a time. Then select it's type and give it a rating. Click 'Add Restaurnant' to add it to the list of places you want to go. When you're finished with adding where you want to eat click the 'Get Restaurant' button to find out where you're eating!</p>
-    <p class="inst">Or:</p>
-    <p>Go to the "Our Choices" page to get some of the top fast food and sit down restaurants in the country.</p> 
+   <!-- <p id="get-restaurant"></p>  -->
+
+    <div id="get-restaurant" class="modal">
+        <div class="modal-content"></div>
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        function myPopup() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+    </script>
     <script src="/js"></script>
 </body>
 </html>

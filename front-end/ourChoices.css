@@ -51,21 +51,49 @@ button:active {
 
 p{
     text-align: center;
-    font-size: 60px;
+    font-size: 32px;
 }
 
 #home{
     display: flex;
     justify-content: right;
+
 }
 
-a{
+#home{
     text-decoration: none;
     color: aliceblue;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
 }
 
 .hide{
     display: none;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 420px;
+    top: 150px;
+    width: 45%; 
+    height: 37%; 
+    overflow: auto;   
+    background-color: aliceblue; 
+    border-style: solid;
+    border-color: #800020;
+    border-width: 5px;
+    border-radius: 12px;
+}
+
+.modal-content {
+    background-color: aliceblue;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #555;
+    width: 80%; 
 }
 
 #spin-again{
@@ -83,5 +111,8 @@ a{
 
 #back{
     font-size: 20px;
-    color: aliceblue;
+    color: #800020;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
 }

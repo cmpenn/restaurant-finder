@@ -51,25 +51,47 @@ h2{
     cursor: pointer;
 }
 
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s 
+}
+
 h3{
     text-align: center;
 }
 
-.got-it{
-    text-align: center;
-}
-
-.inst{
-    font-weight: bold;
-    margin-top: 3px;
-    margin-bottom: 0px;
-}
-
 p{
-    margin: 10px;
-    margin-top: 3px;
-    font-size: 17px;
-    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    text-align: center;
 }
 
 form{
@@ -151,6 +173,30 @@ button:active {
     height: 70px;
     width: 90px;
     font-size: 15px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 420px;
+    top: 150px;
+    width: 45%; 
+    height: 37%; 
+    overflow: auto;   
+    background-color: aliceblue; 
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 12px;
+}
+
+.modal-content {
+    background-color: aliceblue;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #555;
+    width: 80%; 
 }
 
 #direction{
