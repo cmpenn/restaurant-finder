@@ -180,13 +180,13 @@ button:active {
     position: fixed; 
     z-index: 1; 
     left: 420px;
-    top: 150px;
+    top: 98px;
     width: 45%; 
     height: 37%; 
     overflow: auto;   
     background-color: aliceblue; 
     border-style: solid;
-    border-color: black;
+    border-color: #800020;
     border-width: 5px;
     border-radius: 12px;
 }

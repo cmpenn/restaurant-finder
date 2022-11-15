@@ -59,6 +59,7 @@ function getRandomRestaurant(){
             <div><a id="back" href="/">Back</a></div>`
         }
         getButton.classList.add('hide')
+        form.classList.add('hide')
     })
     .catch(err =>{
         console.log(err)
