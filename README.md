@@ -9,9 +9,9 @@ Restaurant selector is an app made for people who are being indecisive about whe
 ![Our Choices Page](/pics/ourchoices.png)
 
 ## Technologies Used
-*JavaScript
-*HTML
-*CSS
+* JavaScript
+* HTML
+* CSS
 
 ## How to use Restaurant Selector
 Enter the name, type, and rating of the restaurant, then click 'Add Restaurant'
